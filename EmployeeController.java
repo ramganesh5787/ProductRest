@@ -64,9 +64,10 @@ public ResponseEntity<?> update (@RequestBody Employee employee,@PathVariable In
 	}
 }
 
-@DeleteMapping ("/employee/{id}")
+@DeleteMapping("/employees/{id}")
 public void delete(@PathVariable Integer id)
 {
+	System.out.println("sassss");
 service.delete(id);	
 }
 }
